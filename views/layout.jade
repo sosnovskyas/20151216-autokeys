@@ -1,0 +1,14 @@
+include mixins
+doctype html
+html
+  include ../modules/head/head
+  include ../modules/header/header
+  include ../modules/selector/selector
+  include ../modules/shower/shower
+  include ../modules/order/order
+  include ../modules/footer/footer
+  head
+    +head
+  body
+    block content
+  script(src='/javascripts/main.js')

@@ -1,0 +1,11 @@
+mixin order(data)
+  .order.disabled
+    .order__wrapper
+      .order__buy
+      .order__title Укажите ваши данные и мы свяжемся с вами
+      form#order.order__form
+        input(type='text', placeholder='имя').order__name
+        input(type='text', placeholder='телефон').order__phone
+        textarea(placeholder='коментарий').order__comment
+        input(type='text', placeholder='E-mail').order__mail
+        input(type='submit', value='Оставить заявку').order__submit

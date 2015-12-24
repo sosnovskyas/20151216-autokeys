@@ -1,0 +1,93 @@
+.shower
+  position: relative;
+  @extend .common-wrapper;
+
+  &__list
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    border: 0;
+
+    position: relative;
+    min-height: 290px;
+    width: 1026px;
+
+  &__search
+    position: absolute;
+    background-image: url('/images/search.png');
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 60px;
+    left: 424px;
+    margin-top: -46px;
+
+  &__item
+    list-style-type: none;
+    width: 100%;
+    clearfix()
+
+  &__key
+    width: 100%;
+    font-size: 16px;
+    //border-collapse: collapse;
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    &-image-wrapper
+      width: 423px;
+      height: 290px;
+
+      float: left;
+
+      overflow: hidden;
+      img
+        height: 100%;
+
+    &-options-wrapper
+      float: right;
+      height: 290px;
+      width: 603px;
+
+    &-name
+      margin: 60px 0 25px 0;
+      font-weight: bold;
+
+
+    &-desc
+      margin-bottom: 20px;
+
+    &-price
+      &-wrapper
+        clearfix()
+
+      &-left
+        float: left;
+        width: 385px;
+
+      &-right
+        float: right;
+        width: 188px;
+
+    &-label
+      float: left;
+
+    &-value
+      float: right;
+      font-weight: bold;
+
+    &-total
+      border-top: dashed 1px black;
+      margin-top: 20px;
+
+    &-buy
+      margin-top: 20px;
+      color: #fff;
+      background-color: #000;
+      text-align: center;
+      font-weight: normal;
+      font-size: 14px;
+      cursor: pointer;
+      height: 25px;
+      padding-top: 7px;

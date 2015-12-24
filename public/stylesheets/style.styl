@@ -1,0 +1,41 @@
+/*
+    INCLUDE LIBRARYS
+*/
+@import '../../node_modules/nib/index';
+
+/*
+    MIXINS
+*/
+// import STYLUS styles from module
+importModule(moduleName)
+  @import '../../modules/' + moduleName + '/' + moduleName + '.styl'
+
+// css reset
+global-reset()
+
+/*
+    COMMON STYLES
+*/
+
+body
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 1126px;
+  font-family: 'Open Sans', sans-serif;
+
+.common-wrapper
+  max-width: 1026px;
+  margin: 0 auto;
+
+.disabled
+  display: none;
+
+/*
+    IMPORTED STYLES
+*/
+importModule('header');
+importModule('selector');
+importModule('shower');
+importModule('order');
+importModule('footer');

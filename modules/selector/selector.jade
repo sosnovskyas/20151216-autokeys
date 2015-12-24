@@ -1,0 +1,13 @@
+mixin selector(data)
+  .selector
+    .selector__item-outer
+      select.selector__item.selector__car
+      a.selector__item-button
+    .selector__item-outer
+      select.selector__item.selector__model(disabled)
+      a.selector__item-button
+    .selector__item-outer
+      select.selector__item.selector__year(disabled)
+      a.selector__item-button
+  // button for genetate key (for debug). NOW DISABLED!
+  input(type='button', value='generate', style="float:left;").generate.disabled

@@ -1,0 +1,50 @@
+.header
+  background-image: url('/images/header-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__top
+    @extend .common-wrapper;
+    margin-bottom: 120px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+
+    &-time
+      //width: 283px;
+      line-height: 33px;
+      padding-left:  25px;
+      background-image: url('/images/clock.png');
+      background-repeat: no-repeat;
+
+    &-promo-text
+      width: 443px;
+      text-align: right;
+      padding-right: 45px;
+      background-image: url('/images/key.png');
+      background-repeat: no-repeat;
+      background-position: 450px 0;
+
+  &__middle
+    @extend .common-wrapper;
+    width: 594px;
+    margin-bottom: 61px;
+
+    &-logo
+      background-image: url('/images/logo.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      //width: 594px;
+      height: 72px;
+      margin-bottom: 30px;
+
+  &__bottom
+    @extend .common-wrapper;
+    position: relative;
+
+    &-label
+      background-image: url('/images/check-auto.png');
+      background-repeat: no-repeat;
+      width: 250px;
+      height: 69px;
